@@ -86,7 +86,7 @@
 					</div>
 					<footer>
 						<p></p>
-						<a href="#portfolio" class="button large scrolly">Let's take a look at our data</a>
+						<a href="https://docs.google.com/spreadsheets/d/1XR8ayGegEAElVg1Ns1Pg8LPTTnN9zB-f9cxuIxCTA-8/edit#gid=0" class="button large scrolly" target="_blank">Let's take a look at our data</a>
 					</footer>
 				</div>
 			</article>
@@ -116,9 +116,15 @@
 						</div>
 					</div>
 					<footer>
-						<p>The team has collected necessary data from both data sets, of which are to be correlated and modeled to achieve the project's objectives.</p>
+						<p>The team has collected necessary data from both datasets, of which are to be correlated and modeled to achieve the project's objectives.</p>
 					</footer>
-					<h3>Features of Interest</h3>
+					<h2>Features of Interest</h2>
+					    <div class="col-4 col-6-medium col-12-medium">
+							<section class="box style3">
+								<h3>Dataset Size</h3>
+								<p align="aln-center">The <b>combined dataset</b> created from the <i>two data sources</i> resulted into a <b>size of 1111 data points</b>. Note that this size was the result after <i>data filtering</i> and <i>pre-processing</i></p>
+							</section>
+						</div>
 						<div class="col-4 col-6-medium col-12-medium">
 							<section class="box style3">
 								<h3>Time Period</h3>
@@ -163,27 +169,38 @@
 				<div class="container">
 					<header>
 						<h2>What methods were applied given the data?</h2>
-						<p>As of now, data has only been reviewed and pre-processed</p>
+						<p>As of now, data has only been filtered and pre-processed</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Data Preprocessing</a></h3>
+								<h3><a href="#">Data Pre-processing</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Machine Learning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<h3><a href="#">Modeling</a></h3>
+								<p><i>In the works</i></p>
 							</article>
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<p></p>
 					</footer>
+					<div class="col">
+						<article class="box style3">
+							<h3>Data Pre-processing</h3>
+							<p align="left">After obtaining the necessary datasets, the data was filtered and combined. As previously stated, data ranging from 1946-2022 were used given the selected countries. The <i>OWID</l> dataset was highly prioritized for data collection, while The World Bank dataset was generally used to fill out missing data observed from the former. </p>
+							<p align="left">Enumerating the steps done in the combining stage:</p>
+<ol><li align="left">Gas, oil and coal CO<sub>2</sub> emissions were summed, producing fossil fuel column in the combined dataset. Note that cement CO<sub>2</sub> emissions were kept separate but is still included in the combined dataset as a separate column.</li>
+<li align="left">GDP was primarily taken from the <i>OWID</i> dataset, if available</li>
+<li align="left">If GDP from <i>OWID</i> is unavailable, The World Bank dataset is consulted. Note that data retrieved from the later is converted into the US dollar value of the year 2011.</li>
+<li align="left">If data is not available to both datasets, the specific row or record is excluded.</li></ol>
+						</article>
+					</div>
 				</div>
 			</article>
 
@@ -212,7 +229,7 @@
 					</div>
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
-						<a href="#contact" class="button large scrolly">Github Repo</a>
+						<a href="https://github.com/jeremyvincentyu/cs132-group-41" target="_blank" class="button large scrolly">Github Repo</a>
 					</footer>
 				</div>
 			</article>
