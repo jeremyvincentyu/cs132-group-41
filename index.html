@@ -246,28 +246,37 @@
 			</article>
 
 			<!-- Methods -->
-			<article id="methods" class="wrapper style3">
+			<article id="methods" class="wrapper style2">
 				<div class="container">
 					<header>
+						<li style="list-style-type:none; margin-top:-30px;">Methodology</li>
 						<h2>What methods were applied given the data?</h2>
-						<p>As of now, data has only been filtered and pre-processed</p>
+						<p>The data has undergone the following procedures in this project:</p>
 					</header>
 					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#datapreproc" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 								<h3><a href="#datapreproc">Data Preprocessing</a></h3>
+								<p>Cleaning and preparing the dataset</p>
 							</article>
 						</div>
-						<div class="col-6 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="#eda" class="image featured"><img src="images/pic20.png" alt="" /></a>
+								<h3><a href="#eda">Data Exploration</a></h3>
+								<p>Initial analysis and hypotheses testing</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic21.jpg" alt="" /></a>
 								<h3><a href="#">Modeling</a></h3>
 								<p><i>In the works</i></p>
 							</article>
 						</div>
 					</div>
-					<footer>
+					<footer>	
 						<p></p>
 					</footer>
 					<div class="article" id="datapreproc">
@@ -276,22 +285,47 @@
 							<div class="article">
 								<img src="images/pic17.png" height="200">
 								<img src="images/pic18.png" height="200">
-							<div class="article">	
-							<p align="left">After obtaining the necessary datasets, the data was filtered and combined. As previously stated, data ranging from 1946-2022 were used given the selected countries. The <i>OWID</i> dataset was highly prioritized for data collection, while The World Bank dataset was generally used to fill out missing data observed from the former. </p>
-							<p align="left">Enumerating the steps done in the combining stage:</p>
-							<ol><li align="left">Gas, oil and coal CO<sub>2</sub> emissions were summed, producing fossil fuel column in the combined dataset. Note that cement CO<sub>2</sub> emissions were kept separate but is still included in the combined dataset as a separate column.</li>
-							<li align="left">GDP was primarily taken from the <i>OWID</i> dataset, if available</li>
-							<li align="left">If GDP from <i>OWID</i> is unavailable, The World Bank dataset is consulted. Note that data retrieved from the later is converted into the US dollar value of the year 2011.</li>
-							<li align="left">If data is not available to both datasets, the specific row or record is excluded.</li></ol>
-						</div>
+								<div class="article">	
+									<p align="left">After obtaining the necessary datasets, the data was filtered and combined. As previously stated, data ranging from 1946-2022 were used given the selected countries. The <i>OWID</i> dataset was highly prioritized for data collection, while The World Bank dataset was generally used to fill out missing data observed from the former. </p>
+									<p align="left">Enumerating the steps done in the combining stage:</p>
+									<ol><li align="left">Gas, oil and coal CO<sub>2</sub> emissions were summed, producing fossil fuel column in the combined dataset. Note that cement CO<sub>2</sub> emissions were kept separate but is still included in the combined dataset as a separate column.</li>
+									<li align="left">GDP was primarily taken from the <i>OWID</i> dataset, if available</li>
+									<li align="left">If GDP from <i>OWID</i> is unavailable, The World Bank dataset is consulted. Note that data retrieved from the later is converted into the US dollar value of the year 2011.</li>
+									<li align="left">If data is not available to both datasets, the specific row or record is excluded.</li></ol>
+								</div>
+							</div>
+						</article>
 					</div>
+					<footer>	
+						<p></p>
+					</footer>
+					<div class="article" id="eda">
+						<article class="box style3">
+							<h3>Exploratory Data Analysis</h3>
+							<div class="article">
+								<img src="RQ1pics/RQ1_plot.png" width="90%">
+								<div class="article">	
+									<p align="center" style="padding: 3%;">The plot above shows a visual relationship between GDP and CO2 emissions as the years go by. 
+										To further examine the relationship between GDP and CO2 emissions, a Permutation-Regression test was done between the two features. 
+										The result for both features yielded a positive relationship between the two (c<sub>cement</sub> ≈ 0.011; c<sub>fossil fuel</sub> ≈ 0.133). Such computed coefficients were
+										also found to be statistically significant at a 95% confidence interval, hence leading to the rejection of the first null hypothesis 
+										(p_value<sub>cement</sub> ≈ 0.001; p_value<sub>fossil fuel</sub> ≈ 0.001).
+									</p>
+								</div>
+								<img src="RQ1pics/RQ1_plot.png" width="90%">
+							</div>
 						</article>
 					</div>
 				</div>
+				
+				<footer>
+					<p style="font-size: larger;">Looking for a more detailed presentation of our Exploratory Data Analysis? Take a look at our Google Colab notebook below.</p>
+						<a href="https://colab.research.google.com/drive/1lmOE7s6md2gqX_niUBPsM7JRaBsVrYLj?usp=sharing#scrollTo=m8t9ZxB1DK10" target="_blank" class="button large scrolly">EDA - Google Colab</a>
+					</footer>
 			</article>
 
-			<!-- Results -->
-			<article id="results" class="wrapper style3">
+			<!-- explore -->
+			<article id="eda" class="wrapper style3">
 				<div class="container">
 					<header>
 						<h2>Here's where we would put the results we will find out</h2>
@@ -325,7 +359,7 @@
 				<div class="container large">
 					<header>
 						<h1 style="font-weight: bold;">C0DEBABE5</h1>
-						<p>Meet the team</p>
+						<p>Meet the team. Just some	 BABE5 who also C0DE.</p>
 					</header>
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
