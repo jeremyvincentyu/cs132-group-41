@@ -5,176 +5,231 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>PiNut 2023 Correlation between GDP and CO2 Emissions</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#overview">Overview</a></li>
-					<li><a href="#data">Data</a></li>
-					<li><a href="#hypotheses">Hypotheses</a></li>
-					<li><a href="#methods">Methods</a></li>
-					<li><a href="#results">Results</a></li>
-					<li><a href="#team">Team</a></li>
-				</ul>
-			</nav>
+<head>
+	<title>PiNut 2023 Correlation between GDP and CO2 Emissions</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic07.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Howdy! We're <strong>C0DEBABE5</strong>.</h1>
-							</header>
-							<p>And this is our project, <strong>(Working Title) The Price of Progress: Investigating the Nexus Between GDP Growth and Carbon Emissions in the Philippines</strong>. Our group intends to create a model that is able to use existing data mapping our and other countries' economic growth to provide quantitative analysis on their future carbon emissions. </p>
-							<p>Data Science Team</p>
-							<ul style="list-style-type:none; margin-top:-30px;">
-							  <li>Jeezer Niño Lee</li>
-							  <li>Jeremy Vincent Yu</li>
-							  <li>Sebastian Yunque</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</article>
+<body class="is-preload">
 
-		<!-- Overview --> <!-- Okay so I'm still getting to know html, I'll just put the text here and make it look nice later-->
-			<article id="overview" class="wrapper style2">
-				<div class="container">
-					<header>
-						<li style="list-style-type:none; margin-top:-30px;">Overview</li>
-						<h2>What does our model aim to accomplish?</h2>
-						<p>And what questions can it answer?</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<h3>Research Questions</h3>
-								<div class="col-4 col-6-medium col-12-small">
-									<p align="left"><br><strong>We primarily aim to answer...</strong></p>
-									<li align="left">How do the Philippines' CO2 emissions from cement and fossil fuels correlate with its GDP over time, and are these emission trends aligned with the rates of economic growth from 1946 to 2022?</li>
-								</div>
-								<div class="col-4 col-6-medium col-12-small">
-									<p align="left"><br><strong>And with that information...</strong></p>
-									<li align="left">Does the Philippines emit CO2 disproportionately compared to its GDP and GDP growth, relative to other and similar economies?</li>
-								</div>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<h3>Problem and Response</h3>
-								<p align="left">As a country with a rapidly developing economy, a steadily growing population, and a unique vulnerability to climate change, the Philippines now, more than ever, needs to be wary of how its growth in industry affects our carbon emissions.</p>
-								<p align="left">So C0DEBABE5 has created (is creating?) a model that takes the Philippines' and other similar and relevant countries' economic and emission-related data and gauges their relationship in order to predict what future carbon emission data might look like if no action is taken.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small"> <!--I kind of wanna add some stuff to the data set, in the way of adding whether a country enacted some environmental policy that year, more boolean-y like the policy tackles this (since gauging whether a policy is good or not is an entirely different matter), but in a specific/localish way. like the policy tackles cement or an increase in taxes or whatever.-->
-							<section class="box style1">
-								<h3>Intention</h3>
-								<p align="left">Utilizing economic indicators and historical emissions data, our model aims to forecast future CO2 emissions in the Philippines. This predictive capability will allow us to benchmark our emissions against similar economies, assessing whether our outputs are proportionate to our economic growth. Additionally, the model will evaluate the effectiveness of recent environmental policies by comparing actual emissions to the predicted values. This analysis will help determine if these policies have successfully mitigated emissions as intended.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p></p>
-						<a href="https://docs.google.com/spreadsheets/d/1XR8ayGegEAElVg1Ns1Pg8LPTTnN9zB-f9cxuIxCTA-8/edit#gid=0" class="button large scrolly" target="_blank">Let's take a look at our data</a>
-					</footer>
-				</div>
-			</article>
-		<!-- Introduction-->
-		<article id="introduction" class="wrapper style2">
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="#top">Top</a></li>
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#data">Data</a></li>
+			<li><a href="#hypotheses">Hypotheses</a></li>
+			<li><a href="#methods">Methods</a></li>
+			<li><a href="#results">Results</a></li>
+			<li><a href="#team">Team</a></li>
+		</ul>
+	</nav>
+
+	<!-- Home -->
+	<article id="top" class="wrapper style1">
 		<div class="container">
-		<div class="col-8 col-7-large col-12-medium">
-			<header>
-				<h3>Introduction</h3>
-			</header>
-			<p>We seek to compare the Philippines' GDP emissions, </p>
-		</div>
-		</div>
-		</article>
-		<!-- Data -->
-			<article id="data" class="wrapper style3">
-				<div class="container">
-					<header>
-						<li style="list-style-type:none; margin-top:-30px;">The Data and its Collection</li>
-						<h2>Where did our data come from?</h2>
-						<p>And what features of such data were the team concerned with?</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-5 col-6-medium col-12-small">
-							<article class="box style3">
-								<a href="https://databank.worldbank.org/reports.aspx?source=2&country=PHL#" target="_blank" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-								<h3><a href="https://databank.worldbank.org/reports.aspx?source=2&country=PHL#" target="_blank">The World Bank Dataset</a></h3>
-								<p>The World Bank Data website is a platform provided by the World Bank Group that offers free access to a wide range of data on global development. The team had acquired several necessary development indicators from this data source, particularly economy-related data for correlation purposes.</p>
-							</article>
-						</div>
-						<div class="col-5 col-6-medium 	col-12-small">
-							<article class="box style3">
-								<a href="https://github.com/owid/co2-data/blob/master/README.md" target="_blank" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-								<h3><a href="https://github.com/owid/co2-data/blob/master/README.md" target="_blank">OWID CO<sub>2</sub> Emissions Dataset</a></h3>
-								<p> This dataset contains information on global carbon dioxide (CO2) emissions over time across various countries. Such data consists of metrics obtained from <i>Our World in Data</i> and its organization. Data of interest consists of indicators concerning Greenhouse gas emissions to be correlated to other data features.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>The team has collected necessary data from both datasets, of which are to be correlated and modeled to achieve the project's objectives.</p>
-					</footer>
+			<div class="row">
+				<div class="col-4 col-5-large col-12-medium">
+					<span class="image fit"><img src="images/pic07.jpg" alt="" /></span>
 				</div>
-
-				<div class="column">
+				<div class="col-8 col-7-large col-12-medium">
 					<header>
-					<h3>Features of Interest</h3>
+						<h1>Howdy! We're <strong>C0DEBABE5</strong>.</h1>
 					</header>
+					<p>And this is our project, <strong>(Working Title) The Price of Progress: Investigating the Nexus
+							Between GDP Growth and Carbon Emissions in the Philippines</strong>. Our group intends to
+						create a model that is able to use existing data mapping our and other countries' economic
+						growth to provide quantitative analysis on their future carbon emissions. </p>
+					<p>Data Science Team</p>
+					<ul style="list-style-type:none; margin-top:-30px;">
+						<li>Jeezer Niño Lee</li>
+						<li>Jeremy Vincent Yu</li>
+						<li>Sebastian Yunque</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
 
-					<div class="row aln-center">
-						<section class="article">
-							<img src="images/pic11.png" height="200">
-						</section>
-					<article class="col-4 col-6-medium col-12-medium">
-						<section class="box style3">
-							<h3>Dataset Size</h3>
-							<p align="left">The <b>combined dataset</b> created from the <i>two data sources</i> resulted into a <b>size of 1111 data points</b>. Note that this size was the result after <i>data filtering</i> and <i>pre-processing</i></p>
-						</section>
-					</article>
-					<article class="col-4 col-6-medium col-12-medium">
-					<section class="box style3">
-							<h3>Time Period</h3>
-							<p align="aln-center">The data obtained are filtered between the years <b>1946-2022</b> in adherence to data recency and availability.</p>
-						</section>
-					</article>
-					<section class="article">
-					<img src="images/pic12.png" height="200">
+	<!-- Overview -->
+	<!-- Okay so I'm still getting to know html, I'll just put the text here and make it look nice later-->
+	<article id="overview" class="wrapper style2">
+		<div class="container">
+			<header>
+				<li style="list-style-type:none; margin-top:-30px;">Overview</li>
+				<h2>What does our model aim to accomplish?</h2>
+				<p>And what questions can it answer?</p>
+			</header>
+			<div class="row aln-center">
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<h3>Research Questions</h3>
+						<div class="col-4 col-6-medium col-12-small">
+							<p align="left"><br><strong>We primarily aim to answer...</strong></p>
+							<li align="left">How do the Philippines' CO2 emissions from cement and fossil fuels
+								correlate with its GDP over time, and are these emission trends aligned with the rates
+								of economic growth from 1946 to 2022?</li>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<p align="left"><br><strong>And with that information...</strong></p>
+							<li align="left">Does the Philippines emit CO2 disproportionately compared to its GDP and
+								GDP growth, relative to other and similar economies?</li>
+						</div>
 					</section>
 				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<h3>Problem and Response</h3>
+						<p align="left">As a country with a rapidly developing economy, a steadily growing population,
+							and a unique vulnerability to climate change, the Philippines now, more than ever, needs to
+							be wary of how its growth in industry affects our carbon emissions.</p>
+						<p align="left">So C0DEBABE5 has created (is creating?) a model that takes the Philippines' and
+							other similar and relevant countries' economic and emission-related data and gauges their
+							relationship in order to predict what future carbon emission data might look like if no
+							action is taken.</p>
+					</section>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<!--I kind of wanna add some stuff to the data set, in the way of adding whether a country enacted some environmental policy that year, more boolean-y like the policy tackles this (since gauging whether a policy is good or not is an entirely different matter), but in a specific/localish way. like the policy tackles cement or an increase in taxes or whatever.-->
+					<section class="box style1">
+						<h3>Intention</h3>
+						<p align="left">Utilizing economic indicators and historical emissions data, our model aims to
+							forecast future CO2 emissions in the Philippines. This predictive capability will allow us
+							to benchmark our emissions against similar economies, assessing whether our outputs are
+							proportionate to our economic growth. Additionally, the model will evaluate the
+							effectiveness of recent environmental policies by comparing actual emissions to the
+							predicted values. This analysis will help determine if these policies have successfully
+							mitigated emissions as intended.</p>
+					</section>
+				</div>
+			</div>
+			<footer>
+				<p></p>
+				<a href="https://docs.google.com/spreadsheets/d/1XR8ayGegEAElVg1Ns1Pg8LPTTnN9zB-f9cxuIxCTA-8/edit#gid=0"
+					class="button large scrolly" target="_blank">Let's take a look at our data</a>
+			</footer>
+		</div>
+	</article>
+	<!-- Introduction-->
+	<article id="introduction" class="wrapper style2">
+		<div class="container">
+			<div class="col-8 col-7-large col-12-medium">
+				<header>
+					<h3>Introduction</h3>
+				</header>
+				<p>We seek to relate the Philippines fossil fuel and cement CO2 emissions, separately, to the Philippines GDP growth,
+					 and compare the Philippines' GDP emissions, in terms of cement CO2 emissions and fossil fuel
+					CO2 emissions, to those of other developing countries and a single developed country, the United
+					States of America. We combine data from Our World in Data (OWID) and World Bank, but primarily use
+					data from Our World in Data.
+					CO2 emissions from OWID are in million tonnes, and the GDP values are in <a
+						href="https://en.wikipedia.org/wiki/International_dollar">international dollars </a>
+					benchmarked at 2011, rather than current US Dollars, in order to prevent inflation from distorting our analysis. 
+					Our analysis is based on a statistical regression test for the Philippines, and a t-test on a sampling distribution to compare 
+					the Philippines' emissions vs GDP coefficients to those of other countries. Due to time constraints, we have cancelled our
+					paln to do LSTM-based machine learning and have instead stopped at Exploratory Data Analysis and staistical testing.
 
-				<div class="column">
-					<div class="row aln-center">
-						<section class="article">
-							<img src="images/pic13.png" height="325">
-						</section>
+				</p>
+			</div>
+		</div>
+	</article>
+	<!-- Data -->
+	<article id="data" class="wrapper style3">
+		<div class="container">
+			<header>
+				<li style="list-style-type:none; margin-top:-30px;">The Data and its Collection</li>
+				<h2>Where did our data come from?</h2>
+				<p>And what features of such data were the team concerned with?</p>
+			</header>
+			<div class="row aln-center">
+				<div class="col-5 col-6-medium col-12-small">
+					<article class="box style3">
+						<a href="https://databank.worldbank.org/reports.aspx?source=2&country=PHL#" target="_blank"
+							class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+						<h3><a href="https://databank.worldbank.org/reports.aspx?source=2&country=PHL#"
+								target="_blank">The World Bank Dataset</a></h3>
+						<p>The World Bank Data website is a platform provided by the World Bank Group that offers free
+							access to a wide range of data on global development. The team had acquired several
+							necessary development indicators from this data source, particularly economy-related data
+							for correlation purposes.</p>
+					</article>
+				</div>
+				<div class="col-5 col-6-medium 	col-12-small">
+					<article class="box style3">
+						<a href="https://github.com/owid/co2-data/blob/master/README.md" target="_blank"
+							class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+						<h3><a href="https://github.com/owid/co2-data/blob/master/README.md" target="_blank">OWID
+								CO<sub>2</sub> Emissions Dataset</a></h3>
+						<p> This dataset contains information on global carbon dioxide (CO2) emissions over time across
+							various countries. Such data consists of metrics obtained from <i>Our World in Data</i> and
+							its organization. Data of interest consists of indicators concerning Greenhouse gas
+							emissions to be correlated to other data features.</p>
+					</article>
+				</div>
+			</div>
+			<footer>
+				<p>The team has collected necessary data from both datasets, of which are to be correlated and modeled
+					to achieve the project's objectives.</p>
+			</footer>
+		</div>
+
+		<div class="column">
+			<header>
+				<h3>Features of Interest</h3>
+			</header>
+
+			<div class="row aln-center">
+				<section class="article">
+					<img src="images/pic11.png" height="200">
+				</section>
+				<article class="col-4 col-6-medium col-12-medium">
+					<section class="box style3">
+						<h3>Dataset Size</h3>
+						<p align="left">The <b>combined dataset</b> created from the <i>two data sources</i> resulted
+							into a <b>size of 1111 data points</b>. Note that this size was the result after <i>data
+								filtering</i> and <i>pre-processing</i></p>
+					</section>
+				</article>
+				<article class="col-4 col-6-medium col-12-medium">
+					<section class="box style3">
+						<h3>Time Period</h3>
+						<p align="aln-center">The data obtained are filtered between the years <b>1946-2022</b> in
+							adherence to data recency and availability.</p>
+					</section>
+				</article>
+				<section class="article">
+					<img src="images/pic12.png" height="200">
+				</section>
+			</div>
+
+			<div class="column">
+				<div class="row aln-center">
+					<section class="article">
+						<img src="images/pic13.png" height="325">
+					</section>
 					<article class="col-4 col-6-medium col-12-medium">
 						<section class="box style3">
 							<h3>Selected Countries</h3>
-							<p align="aln-center">The countries included in this project consist of: <b>Philippines, Thailand, Vietnam, Malaysia, Indonesia, Cambodia, Mexico, Brazil, India, United States, Kenya, South Africa, Sri Lanka, Myanmar, China</b>. The choice of such nations is done considering data availability and inclusion of various economic classifications, growth, and productions.</p>
+							<p align="aln-center">The countries included in this project consist of: <b>Philippines,
+									Thailand, Vietnam, Malaysia, Indonesia, Cambodia, Mexico, Brazil, India, United
+									States, Kenya, South Africa, Sri Lanka, Myanmar, China</b>. The choice of such
+								nations is done considering data availability and inclusion of various economic
+								classifications, growth, and productions.</p>
 						</section>
 					</article>
 					<article class="col-4 col-6-medium col-12-medium">
 						<section class="box style3">
 							<h3>Gross Domestic Product</h3>
-							<p align="aln-center">The <b>Gross Domestic Product</b> or <b>GDP</b> is an indicator used to measure the general economic performance of a country, making this feature to be highly relevant in the aims of the project.
+							<p align="aln-center">The <b>Gross Domestic Product</b> or <b>GDP</b> is an indicator used
+								to measure the general economic performance of a country, making this feature to be
+								highly relevant in the aims of the project.
 							</p>
 							<p>
-							Following the dataset in <i>OWID</i> and <i>The World Bank</i>, the <b>GDP</b> is <i>measured</i> using the <b>US Dollar</b> currency. 
+								Following the dataset in <i>OWID</i> and <i>The World Bank</i>, the <b>GDP</b> is
+								<i>measured</i> using the <b>US Dollar</b> currency.
 							</p>
 						</section>
 					</article>
@@ -188,294 +243,367 @@
 						<section class="article">
 							<img src="images/pic15.png" height="325">
 						</section>
-					<article class="col-4 col-6-medium col-12-medium">
-						<section class="box style3">
-							<h3>Fossil Fuel CO<sub>2</sub> Emissions</h3>
-							<p align="aln-center">This feature consists of the <b><i>sum</i></b> of <b>CO<sub>2</sub> emissions</b> from <b>gas, coal, and oil sources.</b> Energy production, industrial processes, and transportation are some examples of sectors of which fossil fuel combustion occurs of which are necessary for the economy to run and grow.</p> <p>Such data obtained from the <i>OWID</i> dataset are measured in <i>million tonnes</i>.</p>
-						</section>
-					</article>
-					<article class="col-4 col-6-medium col-12-medium">
-						<section class="box style3">
-							<h3>Cement CO<sub>2</sub> Emissions</h3>
-							<p align="aln-center">This feature consists of <b>CO<sub>2</sub> emissions</b> from the <b>production of cement</b>. Apart from the previous sources of CO<sub>2</sub> emissions, cement production is a great contributing factor to generation of Greenhouse gasses, whereas about 8% of the total CO<sub>2</sub> emissions are due to cement productions as reported by the <a href="https://www.cbsnews.com/news/cement-industry-co2-emissions-climate-change-brimstone/" target="_blank">CBS News last January 2023</a>.
-							</p>
-							<p>Also, similar to the previous feature, <i>cement CO<sub>2</sub> emissions</i> are measured in <i>million tonnes</i>.</p>
-						</section>
-					</article>
-					<section class="article">
-						<img src="images/pic16.png" height="325">
-					</section>
-				</div>
-			</article>
-			
-			<!-- Hypothesis -->
-			<article id="hypotheses" class="wrapper style1">
-				<div class="container">
-					<header>
-						<li style="list-style-type:none; margin-top:-30px;">The Research Hypotheses</li>
-						<h2>What hypotheses were formulated for the project's direction?</h2>
-						<p style="font-size: large;">From the two research questions, four particular hypothesis were identified as follows:</p>
-						<div class="row aln-center">
-							<p>_____________________________________________________________________________________________________________________________________________________</p>
-						</div>
-					</header>
-					<div class="row">
-						<div class="col-0 col-5-large col-10-medium" style="background-color: #585858"></div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h4 align="left" style="padding-top: 1%;">There is no significant relationship between GDP and fossil fuel CO<sub>2</sub> emissions.</h3>
-							</header>
-							<p align="left"><strong>There exists a significant relationship between GDP and fossil fuel CO<sub>2</sub> emissions.</strong> </p>
-
-						</div>
-						<div class="col">
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 15%; color: rgb(175, 0, 0);">H<sub>0</sub><sup>(1)</sup></h2>
-							
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 35%; color: rgb(27, 84, 189);">H<sub>A</sub><sup>(1)</sup></h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-0 col-5-large col-10-medium" style="background-color: #aaaaaa"></div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h4 align="left" style="padding-top: 3%;">There is no significant relationship between GDP and cement CO<sub>2</sub> emissions.</h3>
-							</header>
-							<p align="left"><strong>There exists a significant relationship between GDP and cement CO<sub>2</sub> emissions.</strong> </p>
-							
-						</div>
-						<div class="col">
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 35%; color: rgb(175, 0, 0);">H<sub>0</sub><sup>(2)</sup></h2>
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 40%; color: rgb(27, 84, 189);">H<sub>A</sub><sup>(2)</sup></h2>
-						</div>
-
-					</div>
-					<div class="row aln-center">
-						<p>_____________________________________________________________________________________________________________________________________________________</p>
-					</div>
-					<div class="row aln-right">
-						<div class="col">
-							<h2 style="font-weight: bold; font-style: italic;padding-top: 20%; color: rgb(175, 0, 0);">H<sub>0</sub><sup>(3)</sup></h2>
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 75%; color: rgb(27, 84, 189);">H<sub>A</sub><sup>(3)</sup></h2>
-						</div>
-						<div class="col-1 col-4-large col-10-medium" style="background-color: #ffffff"></div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h4 align="right">The Philippines' (Cement CO<sub>2</sub>) to GDP regression coefficient is not significantly different from the mean CO<sub>2</sub> to GDP  
-								regression coefficient of all developing countries  in our dataset</h3>
-							</header>
-							<p align="right"><strong>The Philippines' (Cement CO<sub>2</sub>) to GDP regression coefficient is significantly different from the mean CO<sub>2</sub> to GDP  
-								regression coefficient of all developing countries  in our dataset
-							</strong> </p>
-						</div>
-						<div class="col-0 col-5-large col-10-medium" style="background-color: #ffffff"></div>
-						<div class="col-0 col-5-large col-10-medium" style="background-color: #585858"></div>
-					</div>
-					<div class="row aln-right">
-						<div class="col">
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 40%; color: rgb(175, 0, 0);">H<sub>0</sub><sup>(4)</sup></h2>
-							<h2 style="font-weight: bold; font-style: italic; padding-top: 85%; color: rgb(27, 84, 189);">H<sub>A</sub><sup>(4)</sup></h2>
-						</div>
-						<div class="col-1 col-4-large col-10-medium" style="background-color: #ffffff"></div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h4 align="right" style="padding-top:2%">The Philippines' (Fossil Fuel CO<sub>2</sub>) to GDP regression coefficient is not significantly different from the mean CO<sub>2</sub> to GDP 
-									 regression coefficient of all developing countries  in our dataset</h3>
-							</header>
-							<p align="right"><strong>The Philippines' (Fossil Fuel CO<sub>2</sub>) to GDP regression coefficient is significantly different from the mean CO<sub>2</sub> to GDP 
-								 regression coefficient of all developing countries  in our dataset
-							</strong> </p>
-						</div>
-						<div class="col-0 col-5-large col-10-medium" style="background-color: #ffffff"></div>
-						<div class="col-0 col-5-large col-10-medium" style="background-color: #aaaaaa"></div>
-					</div>
-				</div>
-			</article>
-
-			<!-- Methods -->
-			<article id="methods" class="wrapper style2">
-				<div class="container">
-					<header>
-						<li style="list-style-type:none; margin-top:-30px;">Methodology</li>
-						<h2>What methods were applied given the data?</h2>
-						<p>The data has undergone the following procedures in this project:</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#datapreproc" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#datapreproc">Data Preprocessing</a></h3>
-								<p>Cleaning and preparing the dataset</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#eda" class="image featured"><img src="images/pic20.png" alt="" /></a>
-								<h3><a href="#eda">Data Exploration</a></h3>
-								<p>Initial analysis and hypotheses testing</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic21.jpg" alt="" /></a>
-								<h3><a href="#">Modeling</a></h3>
-								<p><i>In the works</i></p>
-							</article>
-						</div>
-					</div>
-					<footer>	
-						<p></p>
-					</footer>
-					<div class="article" id="datapreproc">
-						<article class="box style3">
-							<h3>Data Preprocessing</h3>
-							<div class="article">
-								<img src="images/pic17.png" height="200">
-								<img src="images/pic18.png" height="200">
-								<div class="article">	
-									<p align="left">After obtaining the necessary datasets, the data was filtered and combined. As previously stated, data ranging from 1946-2022 were used given the selected countries. The <i>OWID</i> dataset was highly prioritized for data collection, while The World Bank dataset was generally used to fill out missing data observed from the former. </p>
-									<p align="left">Enumerating the steps done in the combining stage:</p>
-									<ol><li align="left">Gas, oil and coal CO<sub>2</sub> emissions were summed, producing fossil fuel column in the combined dataset. Note that cement CO<sub>2</sub> emissions were kept separate but is still included in the combined dataset as a separate column.</li>
-									<li align="left">GDP was primarily taken from the <i>OWID</i> dataset, if available</li>
-									<li align="left">If GDP from <i>OWID</i> is unavailable, The World Bank dataset is consulted. Note that data retrieved from the later is converted into the US dollar value of the year 2011.</li>
-									<li align="left">If data is not available to both datasets, the specific row or record is excluded.</li></ol>
-								</div>
-							</div>
-						</article>
-					</div>
-					<footer>	
-						<p></p>
-					</footer>
-					<div class="article" id="eda">
-						<article class="box style3">
-							<h3>Exploratory Data Analysis</h3>
-							<div class="article">
-								<img src="RQ1pics/RQ1_plot.png" width="90%">
-								<div class="article">	
-									<p align="center" style="padding: 3%;">The plot above shows a visual relationship between GDP and CO<sub>2</sub> emissions as the years go by. 
-										To further examine the relationship between GDP and CO<sub>2</sub> emissions, a Permutation-Regression test was done between the two features. 
-										The result for both features yielded a positive relationship between the two (c<sub>cement</sub> ≈ 0.011; c<sub>fossil fuel</sub> ≈ 0.133). Such computed coefficients were
-										also found to be statistically significant at a 95% confidence interval, hence leading to the rejection of the first two null hypotheses 
-										(p_value<sub>cement</sub> ≈ 0.001; p_value<sub>fossil fuel</sub> ≈ 0.001).
-									</p>
-								</div>
-								<div class="col aln-center">
-									<div class="row aln-center">
-										<img src="RQ2pics/gdp_vs_cement_co2_Philippines_vs_Myanmar.png" width="50%">
-										<img src="RQ2pics/gdp_vs_fossil_fuel_co2_Philippines_vs_Myanmar.png" width="50%">
-									</div>
-									<div class="row aln-center">
-										<img src="RQ2pics/gdp_vs_cement_co2_Philippines_vs_Vietnam.png" width="50%">
-										<img src="RQ2pics/gdp_vs_fossil_fuel_co2_Philippines_vs_Vietnam.png" width="50%">
-									</div>
-								</div>
-								<div class="article">	
-									<p align="center" style="padding: 3%; padding-bottom: 0%">These graphs compare the Philippines' GDP, cement CO<sub>2</sub> emissions, and fossil fuel CO<sub>2</sub> emissions to the most 
-										similar country in the dataset, Vietnam, and the most different country in the dataset, Myanmar. </p>
-										<p align="center">At a confidence level of 95%, the Philippines' 
-										regression coefficient for GDP to cement CO<sub>2</sub> is not significantly different from the developing countries' mean with p = 0.08, but its regression 
-										coefficient for GDP to fossil fuel CO<sub>2</sub> is significantly different from the mean of the developing countries' sampling distribution with 
-										p = 2x10<sup>(-180)</sup>. 
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-				
-				<footer>
-					<p>Curious with how we explored the data? Take a look at our Google Colab notebook below.</p>
-						<a href="https://colab.research.google.com/drive/1lmOE7s6md2gqX_niUBPsM7JRaBsVrYLj?usp=sharing#scrollTo=m8t9ZxB1DK10" target="_blank" class="button large scrolly">EDA - Google Colab</a>
-					</footer>
-			</article>
-
-			<!-- explore -->
-			<article id="eda" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here's where we would put the results we will find out</h2>
-						<p>In the works</p>
-					</header>
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>In the works</p>
-							</article>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>In the works</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Want to learn more? Take a look at our source codes.</p>
-						<a href="https://github.com/jeremyvincentyu/cs132-group-41" target="_blank" class="button large scrolly">Github Repo</a>
-					</footer>
-				</div>
-			</article>
-
-		<!-- Team -->
-			<article id="team" class="wrapper style4">
-				<div class="container large">
-					<header>
-						<h1 style="font-weight: bold;">C0DEBABE5</h1>
-						<p>Meet the team. Just some	 <i>BABE5</i> who also <i>C0DE</i>.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2" style="background-color: #f3f3f3;">
-								<img src="images/Lee.jpg" alt="" height="400"  style=" border-radius: 10%;"/>
-								<h3 style="color: #303030; padding: 4%; text-shadow: none;">Jeezer Niño Lee</h3>
-								<p style="text-shadow: none;color:#303030; text-align: left;">Hi! I'm Jeezer Lee, an undergraduate computer science student at the University of the Philippines - Diliman. 
-									My sense of wonder and curiosity with computers during my early age motivated me to pursue the course, wherein even in the present, I am continuously amazed 
-									with its diverse applications and possibilities.</p>
-								<p style="text-shadow: none;color:#303030; text-align: left;">
-									Nowadays, I find myself loving obscure or strange games, with <i>Fear & Hunger</i> and it's sequel <i>Termina</i> as my current favorites. 
-									Besides these, you may find me having deep appreciation of music, arts, programming, and philosophy in general.
+						<article class="col-4 col-6-medium col-12-medium">
+							<section class="box style3">
+								<h3>Fossil Fuel CO<sub>2</sub> Emissions</h3>
+								<p align="aln-center">This feature consists of the <b><i>sum</i></b> of
+									<b>CO<sub>2</sub> emissions</b> from <b>gas, coal, and oil sources.</b> Energy
+									production, industrial processes, and transportation are some examples of sectors of
+									which fossil fuel combustion occurs of which are necessary for the economy to run
+									and grow.
 								</p>
-								<a href="mailto:jdlee2@up.edu.ph" style="text-shadow: none;color:#328ecc; text-align: left;">jdlee2@up.edu.ph</a>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium 	col-12-small">
-							<article class="box style2" style="background-color: #f3f3f3;">
-								<img src="images/yu.jpg" alt="" height="400"  style=" border-radius: 10%;"/>
-								<h3 style="color: #303030; padding: 4%; text-shadow: none;">Jeremy Vincent Yu</h3>
-								<p style="text-shadow: none;color:#303030; text-align: left;"> Hello, I'm Jeremy, a 5th year BS Computer Science student graduating this year. 
-									I am a supporter of free and open source software, with a preference for copylefts over permissive licenses. </p>
-								<p style="text-shadow: none;color:#303030; text-align: left;">However, I am very willing to work on permissively licensed projects, but prefer to put new projects started by me under 
-									a custom copyleft license that penalizes litigation, but otherwise behaves like a permissive license. I dabble with open-source, 
-									permissively licensed Local LLMs and other permissively licensed data science libraries, 
-									and am learning data science in CS 132 somewhat more systematically than I would on my own.</p>
-								<a href="mailto:jtyu3@up.edu.ph" style="text-shadow: none;color:#328ecc; text-align: left;">jtyu3@up.edu.ph</a>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium 	col-12-small">
-							<article class="box style2" style="background-color: #f3f3f3;">
-								<img src="images/yunque.jpg" alt="" height="400" style=" border-radius: 10%;"/>
-								<h3 style="color: #303030; padding: 4%; text-shadow: none;">Sebastian Yunque</h3>
-								<p style="text-shadow: none;color:#303030; text-align: left;"> Howdy! I’m Basi- a struggling Computer Science student currently
-									taking residence at the awesome University of the Philippines. </p>
-									<p style="text-shadow: none;color:#303030; text-align: left;"> When I'm not wrestling problem sets or performing mental gymnastics over the 
-									nutritional quality of my next meal, I enjoy learning about astrophysics and thinking about doing problems on LeetCode. </p>
-									<p style="text-shadow: none;color:#303030; text-align: left;"> My hobbies include going to the gym, bedrotting, and doomscrolling.</p>
-								<a href="mailto:scyunque@up.edu.ph" style="text-shadow: none;color:#328ecc; text-align: left;">scyunque@up.edu.ph</a>
-							</article>
+								<p>Such data obtained from the <i>OWID</i> dataset are measured in <i>million
+										tonnes</i>.</p>
+							</section>
+						</article>
+						<article class="col-4 col-6-medium col-12-medium">
+							<section class="box style3">
+								<h3>Cement CO<sub>2</sub> Emissions</h3>
+								<p align="aln-center">This feature consists of <b>CO<sub>2</sub> emissions</b> from the
+									<b>production of cement</b>. Apart from the previous sources of CO<sub>2</sub>
+									emissions, cement production is a great contributing factor to generation of
+									Greenhouse gasses, whereas about 8% of the total CO<sub>2</sub> emissions are due to
+									cement productions as reported by the <a
+										href="https://www.cbsnews.com/news/cement-industry-co2-emissions-climate-change-brimstone/"
+										target="_blank">CBS News last January 2023</a>.
+								</p>
+								<p>Also, similar to the previous feature, <i>cement CO<sub>2</sub> emissions</i> are
+									measured in <i>million tonnes</i>.</p>
+							</section>
+						</article>
+						<section class="article">
+							<img src="images/pic16.png" height="325">
+						</section>
+					</div>
+	</article>
+
+	<!-- Hypothesis -->
+	<article id="hypotheses" class="wrapper style1">
+		<div class="container">
+			<header>
+				<li style="list-style-type:none; margin-top:-30px;">The Research Hypotheses</li>
+				<h2>What hypotheses were formulated for the project's direction?</h2>
+				<p style="font-size: large;">From the two research questions, four particular hypothesis were identified
+					as follows:</p>
+				<div class="row aln-center">
+					<p>_____________________________________________________________________________________________________________________________________________________
+					</p>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-0 col-5-large col-10-medium" style="background-color: #585858"></div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h4 align="left" style="padding-top: 1%;">There is no significant relationship between GDP and
+							fossil fuel CO<sub>2</sub> emissions.</h3>
+					</header>
+					<p align="left"><strong>There exists a significant relationship between GDP and fossil fuel
+							CO<sub>2</sub> emissions.</strong> </p>
+
+				</div>
+				<div class="col">
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 15%; color: rgb(175, 0, 0);">
+						H<sub>0</sub><sup>(1)</sup></h2>
+
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 35%; color: rgb(27, 84, 189);">
+						H<sub>A</sub><sup>(1)</sup></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-0 col-5-large col-10-medium" style="background-color: #aaaaaa"></div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h4 align="left" style="padding-top: 3%;">There is no significant relationship between GDP and
+							cement CO<sub>2</sub> emissions.</h3>
+					</header>
+					<p align="left"><strong>There exists a significant relationship between GDP and cement
+							CO<sub>2</sub> emissions.</strong> </p>
+
+				</div>
+				<div class="col">
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 35%; color: rgb(175, 0, 0);">
+						H<sub>0</sub><sup>(2)</sup></h2>
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 40%; color: rgb(27, 84, 189);">
+						H<sub>A</sub><sup>(2)</sup></h2>
+				</div>
+
+			</div>
+			<div class="row aln-center">
+				<p>_____________________________________________________________________________________________________________________________________________________
+				</p>
+			</div>
+			<div class="row aln-right">
+				<div class="col">
+					<h2 style="font-weight: bold; font-style: italic;padding-top: 20%; color: rgb(175, 0, 0);">
+						H<sub>0</sub><sup>(3)</sup></h2>
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 75%; color: rgb(27, 84, 189);">
+						H<sub>A</sub><sup>(3)</sup></h2>
+				</div>
+				<div class="col-1 col-4-large col-10-medium" style="background-color: #ffffff"></div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h4 align="right">The Philippines' (Cement CO<sub>2</sub>) to GDP regression coefficient is not
+							significantly different from the mean CO<sub>2</sub> to GDP
+							regression coefficient of all developing countries in our dataset</h3>
+					</header>
+					<p align="right"><strong>The Philippines' (Cement CO<sub>2</sub>) to GDP regression coefficient is
+							significantly different from the mean CO<sub>2</sub> to GDP
+							regression coefficient of all developing countries in our dataset
+						</strong> </p>
+				</div>
+				<div class="col-0 col-5-large col-10-medium" style="background-color: #ffffff"></div>
+				<div class="col-0 col-5-large col-10-medium" style="background-color: #585858"></div>
+			</div>
+			<div class="row aln-right">
+				<div class="col">
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 40%; color: rgb(175, 0, 0);">
+						H<sub>0</sub><sup>(4)</sup></h2>
+					<h2 style="font-weight: bold; font-style: italic; padding-top: 85%; color: rgb(27, 84, 189);">
+						H<sub>A</sub><sup>(4)</sup></h2>
+				</div>
+				<div class="col-1 col-4-large col-10-medium" style="background-color: #ffffff"></div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h4 align="right" style="padding-top:2%">The Philippines' (Fossil Fuel CO<sub>2</sub>) to GDP
+							regression coefficient is not significantly different from the mean CO<sub>2</sub> to GDP
+							regression coefficient of all developing countries in our dataset</h3>
+					</header>
+					<p align="right"><strong>The Philippines' (Fossil Fuel CO<sub>2</sub>) to GDP regression coefficient
+							is significantly different from the mean CO<sub>2</sub> to GDP
+							regression coefficient of all developing countries in our dataset
+						</strong> </p>
+				</div>
+				<div class="col-0 col-5-large col-10-medium" style="background-color: #ffffff"></div>
+				<div class="col-0 col-5-large col-10-medium" style="background-color: #aaaaaa"></div>
+			</div>
+		</div>
+	</article>
+
+	<!-- Methods -->
+	<article id="methods" class="wrapper style2">
+		<div class="container">
+			<header>
+				<li style="list-style-type:none; margin-top:-30px;">Methodology</li>
+				<h2>What methods were applied given the data?</h2>
+				<p>The data has undergone the following procedures in this project:</p>
+			</header>
+			<div class="row">
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#datapreproc" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<h3><a href="#datapreproc">Data Preprocessing</a></h3>
+						<p>Cleaning and preparing the dataset</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#eda" class="image featured"><img src="images/pic20.png" alt="" /></a>
+						<h3><a href="#eda">Data Exploration</a></h3>
+						<p>Initial analysis and hypotheses testing</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="images/pic21.jpg" alt="" /></a>
+						<h3><a href="#">Modeling</a></h3>
+						<p><i>In the works</i></p>
+					</article>
+				</div>
+			</div>
+			<footer>
+				<p></p>
+			</footer>
+			<div class="article" id="datapreproc">
+				<article class="box style3">
+					<h3>Data Preprocessing</h3>
+					<div class="article">
+						<img src="images/pic17.png" height="200">
+						<img src="images/pic18.png" height="200">
+						<div class="article">
+							<p align="left">After obtaining the necessary datasets, the data was filtered and combined.
+								As previously stated, data ranging from 1946-2022 were used given the selected
+								countries. The <i>OWID</i> dataset was highly prioritized for data collection, while The
+								World Bank dataset was generally used to fill out missing data observed from the former.
+							</p>
+							<p align="left">Enumerating the steps done in the combining stage:</p>
+							<ol>
+								<li align="left">Gas, oil and coal CO<sub>2</sub> emissions were summed, producing
+									fossil fuel column in the combined dataset. Note that cement CO<sub>2</sub>
+									emissions were kept separate but is still included in the combined dataset as a
+									separate column.</li>
+								<li align="left">GDP was primarily taken from the <i>OWID</i> dataset, if available</li>
+								<li align="left">If GDP from <i>OWID</i> is unavailable, The World Bank dataset is
+									consulted. Note that data retrieved from the later is converted into the US dollar
+									value of the year 2011.</li>
+								<li align="left">If data is not available to both datasets, the specific row or record
+									is excluded.</li>
+							</ol>
 						</div>
 					</div>
+				</article>
+			</div>
+			<footer>
+				<p></p>
+			</footer>
+			<div class="article" id="eda">
+				<article class="box style3">
+					<h3>Exploratory Data Analysis</h3>
+					<div class="article">
+						<img src="RQ1pics/RQ1_plot.png" width="90%">
+						<div class="article">
+							<p align="center" style="padding: 3%;">The plot above shows a visual relationship between
+								GDP and CO<sub>2</sub> emissions as the years go by.
+								To further examine the relationship between GDP and CO<sub>2</sub> emissions, a
+								Permutation-Regression test was done between the two features.
+								The result for both features yielded a positive relationship between the two
+								(c<sub>cement</sub> ≈ 0.011; c<sub>fossil fuel</sub> ≈ 0.133). Such computed
+								coefficients were
+								also found to be statistically significant at a 95% confidence interval, hence leading
+								to the rejection of the first two null hypotheses
+								(p_value<sub>cement</sub> ≈ 0.001; p_value<sub>fossil fuel</sub> ≈ 0.001).
+							</p>
+						</div>
+						<div class="col aln-center">
+							<div class="row aln-center">
+								<img src="RQ2pics/gdp_vs_cement_co2_Philippines_vs_Myanmar.png" width="50%">
+								<img src="RQ2pics/gdp_vs_fossil_fuel_co2_Philippines_vs_Myanmar.png" width="50%">
+							</div>
+							<div class="row aln-center">
+								<img src="RQ2pics/gdp_vs_cement_co2_Philippines_vs_Vietnam.png" width="50%">
+								<img src="RQ2pics/gdp_vs_fossil_fuel_co2_Philippines_vs_Vietnam.png" width="50%">
+							</div>
+						</div>
+						<div class="article">
+							<p align="center" style="padding: 3%; padding-bottom: 0%">These graphs compare the
+								Philippines' GDP, cement CO<sub>2</sub> emissions, and fossil fuel CO<sub>2</sub>
+								emissions to the most
+								similar country in the dataset, Vietnam, and the most different country in the dataset,
+								Myanmar. </p>
+							<p align="center">At a confidence level of 95%, the Philippines'
+								regression coefficient for GDP to cement CO<sub>2</sub> is not significantly different
+								from the developing countries' mean with p = 0.08, but its regression
+								coefficient for GDP to fossil fuel CO<sub>2</sub> is significantly different from the
+								mean of the developing countries' sampling distribution with
+								p = 2x10<sup>(-180)</sup>.
+							</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+
+		<footer>
+			<p>Curious with how we explored the data? Take a look at our Google Colab notebook below.</p>
+			<a href="https://colab.research.google.com/drive/1lmOE7s6md2gqX_niUBPsM7JRaBsVrYLj?usp=sharing#scrollTo=m8t9ZxB1DK10"
+				target="_blank" class="button large scrolly">EDA - Google Colab</a>
+		</footer>
+	</article>
+
+	<!-- explore -->
+	<article id="eda" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Here's where we would put the results we will find out</h2>
+				<p>In the works</p>
+			</header>
+			<div class="row">
+				<div class="col-6 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<h3><a href="#">Results</a></h3>
+						<p>In the works</p>
+					</article>
 				</div>
-			</article>
+				<div class="col-6 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+						<h3><a href="#">Results</a></h3>
+						<p>In the works</p>
+					</article>
+				</div>
+			</div>
+			<footer>
+				<p>Want to learn more? Take a look at our source codes.</p>
+				<a href="https://github.com/jeremyvincentyu/cs132-group-41" target="_blank"
+					class="button large scrolly">Github Repo</a>
+			</footer>
+		</div>
+	</article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Team -->
+	<article id="team" class="wrapper style4">
+		<div class="container large">
+			<header>
+				<h1 style="font-weight: bold;">C0DEBABE5</h1>
+				<p>Meet the team. Just some <i>BABE5</i> who also <i>C0DE</i>.</p>
+			</header>
+			<div class="row aln-center">
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2" style="background-color: #f3f3f3;">
+						<img src="images/Lee.jpg" alt="" height="400" style=" border-radius: 10%;" />
+						<h3 style="color: #303030; padding: 4%; text-shadow: none;">Jeezer Niño Lee</h3>
+						<p style="text-shadow: none;color:#303030; text-align: left;">Hi! I'm Jeezer Lee, an
+							undergraduate computer science student at the University of the Philippines - Diliman.
+							My sense of wonder and curiosity with computers during my early age motivated me to pursue
+							the course, wherein even in the present, I am continuously amazed
+							with its diverse applications and possibilities.</p>
+						<p style="text-shadow: none;color:#303030; text-align: left;">
+							Nowadays, I find myself loving obscure or strange games, with <i>Fear & Hunger</i> and it's
+							sequel <i>Termina</i> as my current favorites.
+							Besides these, you may find me having deep appreciation of music, arts, programming, and
+							philosophy in general.
+						</p>
+						<a href="mailto:jdlee2@up.edu.ph"
+							style="text-shadow: none;color:#328ecc; text-align: left;">jdlee2@up.edu.ph</a>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium 	col-12-small">
+					<article class="box style2" style="background-color: #f3f3f3;">
+						<img src="images/yu.jpg" alt="" height="400" style=" border-radius: 10%;" />
+						<h3 style="color: #303030; padding: 4%; text-shadow: none;">Jeremy Vincent Yu</h3>
+						<p style="text-shadow: none;color:#303030; text-align: left;"> Hello, I'm Jeremy, a 5th year BS
+							Computer Science student graduating this year.
+							I am a supporter of free and open source software, with a preference for copylefts over
+							permissive licenses. </p>
+						<p style="text-shadow: none;color:#303030; text-align: left;">However, I am very willing to work
+							on permissively licensed projects, but prefer to put new projects started by me under
+							a custom copyleft license that penalizes litigation, but otherwise behaves like a permissive
+							license. I dabble with open-source,
+							permissively licensed Local LLMs and other permissively licensed data science libraries,
+							and am learning data science in CS 132 somewhat more systematically than I would on my own.
+						</p>
+						<a href="mailto:jtyu3@up.edu.ph"
+							style="text-shadow: none;color:#328ecc; text-align: left;">jtyu3@up.edu.ph</a>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium 	col-12-small">
+					<article class="box style2" style="background-color: #f3f3f3;">
+						<img src="images/yunque.jpg" alt="" height="400" style=" border-radius: 10%;" />
+						<h3 style="color: #303030; padding: 4%; text-shadow: none;">Sebastian Yunque</h3>
+						<p style="text-shadow: none;color:#303030; text-align: left;"> Howdy! I’m Basi- a struggling
+							Computer Science student currently
+							taking residence at the awesome University of the Philippines. </p>
+						<p style="text-shadow: none;color:#303030; text-align: left;"> When I'm not wrestling problem
+							sets or performing mental gymnastics over the
+							nutritional quality of my next meal, I enjoy learning about astrophysics and thinking about
+							doing problems on LeetCode. </p>
+						<p style="text-shadow: none;color:#303030; text-align: left;"> My hobbies include going to the
+							gym, bedrotting, and doomscrolling.</p>
+						<a href="mailto:scyunque@up.edu.ph"
+							style="text-shadow: none;color:#328ecc; text-align: left;">scyunque@up.edu.ph</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</article>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>
