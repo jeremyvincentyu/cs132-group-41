@@ -39,10 +39,12 @@
 					<header>
 						<h1>Howdy! We're <strong>C0DEBABE5</strong>.</h1>
 					</header>
-					<p>And this is our project, <strong>(Working Title) The Price of Progress: Investigating the Nexus
-							Between GDP Growth and Carbon Emissions in the Philippines</strong>. Our group intends to
-						create a model that is able to use existing data mapping our and other countries' economic
-						growth to provide quantitative analysis on their future carbon emissions. </p>
+					<p>And this is our project, <strong>The Price of Progress: Investigating the Nexus
+							Between GDP Growth and Carbon Emissions in the Philippines</strong>. 
+						Our group intends to investigate the relationship between a country’s
+						economic development and carbon emissions,
+						using existing data mapping our and other regions’ economic growth to provide 
+						a quantitative analysis on where the Philippines might be standing. </p>
 					<p>Data Science Team</p>
 					<ul style="list-style-type:none; margin-top:-30px;">
 						<li>Jeezer Niño Lee</li>
@@ -90,6 +92,9 @@
 							other similar and relevant countries' economic and emission-related data and gauges their
 							relationship in order to predict what future carbon emission data might look like if no
 							action is taken.</p>
+						<p align="left"> (real problem statement should be short and snappy, 2 sentences max but only if necessary, the abs-cbn one had
+							a phrase lang) A rapidly growing economy with concerns about its environmental smpacts <br/> Solution: An investigation on the Philippines' CO2 emissions over time
+							and a comparative analysis on its performance relative to other countries.</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
@@ -120,7 +125,15 @@
 				<header>
 					<h3>Introduction</h3>
 				</header>
-				<p>We seek to relate the Philippines fossil fuel and cement CO2 emissions, separately, to the Philippines GDP growth,
+				<p>	While economic growth is often celebrated for bringing prosperity and development, 
+					the Philippines' rapid ascent as a developing powerhouse raises important questions about sustainability. 
+					The country's impressive strides in GDP are undeniably positive, but if unchecked, this growth may come at a significant environmental cost.
+					This is why we decided to focus on this issue: to investigate whether the Philippines' economic progress 
+					is contributing to rising carbon emissions and environmental degradation.
+					Our project aims to uncover the delicate balance between economic success and environmental stewardship, 
+					emphasizing the need for sustainable growth to ensure a healthier future. <br/> <br/>
+					
+					We seek to relate the Philippines fossil fuel and cement CO2 emissions, separately, to the Philippines GDP growth,
 					 and compare the Philippines' GDP emissions, in terms of cement CO2 emissions and fossil fuel
 					CO2 emissions, to those of other developing countries and a single developed country, the United
 					States of America. We combine data from Our World in Data (OWID) and World Bank, but primarily use
@@ -529,15 +542,59 @@
 			</footer>
 		</div>
 	</article>
+	<!-- Interpretation, fuck html-->
+	<article id="interpretation" class="wrapper style2">
+		<div class="container"?
+			<div class = "col-8 col-7 large col-12-medium">
+			<header>
+				Interpretation
+			</header>
+			<p>
+				Interpreting the GDP-CO2 emission data using the International Dollar (Purchasing Power Parity - PPP) 
+				rather than USD provides a clearer and more meaningful comparison of the economic performance and environmental impact of the countries being compared. 
+				The relative price adjustment accounts for the difference in cost of living and price levels in different countries, 
+				providing a more accurate measure of purchasing power and actual GDP value in terms of economic welfare.<br/> <br/>
+
+				The Philippines has demonstrated consistent and rapid GDP growth, especially after the year 2000, 
+				suggesting significant improvements in the purchasing power of its population. 
+				Despite the significant economic expansion, the increase in CO2 emissions has been moderate. <br/> <br/>
+
+				Vietnam’s trajectory, however, tells a different story. While the country’s GDP has also risen significantly, 
+				their rise in CO2 emissions has also grown disproportionately, compared to the Philippines, 
+				suggesting a heavier reliance on fossil fuels driven by rapid expansion. <br/> <br/>
+
+				Myanmar, another country in Southeast Asia, with its much smaller economy and lower emissions presents an interesting case. 
+				The country’s GDP growth is a lot less pronounced and emissions have only barely started to noticeably rise in recent decades. 
+				The adjusted GDP shows Myanmar’s potential for sustainable growth, with opportunities to adopt sustainable practices from the get-go. <br/> <br/>
+
+				Overall, using PPP data for interpretation shows that the Philippines has achieved efficient economic growth with moderate CO2 emissions, suggesting that, 
+				at least in the aspect of greenhouse gas emissions, we’re doing relatively well. <br/> <br/>
+
+				<br/><br/><br/><br/>
+					We outperform our most similar neighbor, Vietnam, both having a higher GDP and having lower 
+					 CO2 emissions from both cement and fossil fuels. Our most different neighbor, Myanmar, has both a lower GDP and 
+					lower emissions, which precludes direct comparison. Our permutation regression test reveals that there are indeed statistically
+					significant relationships between the Philippines' GDP and its cement CO2 emissions, and between its GDP and its fossil fuel CO2 emissions. 
+					The Philippines' regression coefficient for fossil fuel CO2 and GDP is significantly different from those of other developing countries,
+					but the Philippines' regression coefficient for cement CO2 is not significantly different from those of other developing countries. Additionally, direct 
+					inspection of the regression coefficients reveals that the Philippines' coefficient for fossil fuel CO2 emission(y) vs GDP(x) is in fact the third lowest,
+				    	,having an even lower coefficient than the developed United States, with only Sri lanka and Myanmar having lower coefficients. In our analysis, a lower coefficient is better
+					 because it translates to less of an emissions increase for a given GDP increase.
+			</p>
+
+		
+	</article>
+					
 	<!-- Conclusion-->
 	<article id="conclusion" class="wrapper style2">
 		<div class="container">
 			<div class="col-8 col-7-large col-12-medium">
 				<header>
-					<h3>Cocnlusion</h3>
+					<h3>Conclusion</h3>
 				</header>
 				<p>
-					Interestingly enough, despite the general sentiment that the Philippines is a poor country,
+					Remove this
+					(Interestingly enough, despite the general sentiment that the Philippines is a poor country,
 					 we outperform our most similar neighbor, Vietnam, both having a higher GDP and having lower 
 					 CO2 emissions from both cement and fossil fuels. Our most different neighbor, Myanmar, has both a lower GDP and 
 					lower emissions, which precludes direct comparison. The permutation regression test reveals that there are indeed statistically
@@ -546,7 +603,16 @@
 					but the Philippines' regression coefficient for cement CO2 is not significantly different from those of other developing countries. Additionally, direct 
 					inspection of the regression coefficients reveals that the Philippines' coefficient for fossil fuel CO2 emission(y) vs GDP(x) is in fact the third lowest,
 				    ,having an even lower coefficient than the developed United States, with only Sri lanka and Myanmar having lower coefficients. In our analysis, a lower coefficient is better
-					 because it translates to less of an emissions increase for a given GDP increase.
+					 because it translates to less of an emissions increase for a given GDP increase.) <br/> <br/>
+
+					(New concl since jeremys is in interpret now)
+					The CO2 emissions over GDP for the Philippines show a general decrease, indicating significant improvements in carbon efficiency. 
+					Compared to neighbors like Vietnam, the Philippines demonstrates better carbon efficiency. 
+					This trend aligns with global advancements driven by technological improvements and a shift towards sustainability. 
+
+					However, broader environmental and social challenges remain. To ensure truly sustainable and inclusive development, 
+					comprehensive policies addressing total emissions, ecological health, and social well-being are essential​
+
 				</p>
 			</div>
 		</div>
