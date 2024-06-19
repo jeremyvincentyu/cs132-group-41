@@ -451,6 +451,12 @@ a:focus {
   color: #000000;
 }
 
+
+.heathy_section #quote {
+  background-image: none;
+  background-color: #ffffff;
+}
+
 .trainer_section {
   background-image: url(../images/up.png);
   background-size: cover;
