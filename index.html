@@ -26,15 +26,33 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Dark themed scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #2b2b2b; /* Dark background */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #6c757d; /* Gray thumb */
+        border-radius: 10px;
+        border: 3px solid #2b2b2b; /* Match the background */
+    }
+
+  </style>
 </head>
 
 <div class="hero_area_nav">
-<body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container fixed-top" style="background-color: #1a1919; background-image:none; background-blend-mode: color;">
           <a class="navbar-brand" href="index.html">
-            <span style="text-transform: none;">
+            <span style="text-transform: none; margin-left: 25px;">
               PiNut 2023: A CS 132 Project
             </span>
           </a>
@@ -45,7 +63,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href=#home>Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
@@ -66,6 +84,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href=#con>Conclusions </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=#repo>Github </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href=#team>About C0DEBABE5</a>
@@ -253,6 +274,11 @@
                           The World Bank Data website is a platform provided by the World Bank Group that offers free access to a wide range of data on global development.
                           The team had acquired several necessary development indicators from this data source, particularly economy-related data for correlation purposes.
                         </p>
+                        <div class="btn-box">
+                          <a href="https://databank.worldbank.org/reports.aspx?source=2&country=PHL#" target="_blank">
+                            VISIT The World Bank
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -270,6 +296,11 @@
                           metrics obtained from Our World in Data and its organization. Such data consists of indicators concerning Greenhouse gas emissions to be correlated 
                           to other data features.
                         </p>
+                        <div class="btn-box">
+                          <a href="https://github.com/owid/co2-data/blob/master/README.md" target="_blank">
+                            VISIT OWID
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1278,7 +1309,6 @@
             </div>
           </div>
     </div>
-
   </section>
 
 
@@ -1290,6 +1320,30 @@
       </div>
   </section>
   <!-- Meet the team section -->
+
+  <section class="heathy_section layout_padding" id="repo" style="background-image:none; background-color: #1a1a1a;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <div class="detail-box">
+            <div class="header_section">
+              <h2 style="font-weight: bold;">
+                Github Repository
+              </h2>
+            </div>
+            <div class="img-box" style="margin-top: 30px;">
+              <img src="images/github.png" alt="">
+            </div>
+            <div class="btn-box" style="margin-bottom: 10px; margin-top: 30px;">
+              <a href="https://github.com/jeremyvincentyu/cs132-group-41" target="_blank">
+                VISIT OUR PROJECT FOLDER
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="trainer_section layout_padding" id="team">
     <div class="col" style="align-content: center;">
@@ -1415,6 +1469,29 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
 
+
+  <!-- Smooth scrolling JavaScript -->
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links inside the navbar
+    $(".navbar-nav a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </body>
 
 </html>
